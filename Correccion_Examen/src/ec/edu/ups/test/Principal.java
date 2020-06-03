@@ -27,16 +27,20 @@ public class Principal {
             System.out.println("Ingrese Television");
             contrlEle.crearTelevision();
         }
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Mostrar Televisiones");
+            contrlEle.mostrarTelevision();
+        }
 
-        System.out.println("Mostrar Televisiones");
-        contrlEle.mostrarTelevision();
         for (int i = 0; i < 3; i++) {
             System.out.println("Ingrese lavadora");
             contrlEle.crearLavadora();
         }
 
-        System.out.println("Mostrar lavadoras");
-        contrlEle.mostrarLavadoras();
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Mostrar lavadoras");
+            contrlEle.mostrarLavadoras();
+        }
 
     }
 }
