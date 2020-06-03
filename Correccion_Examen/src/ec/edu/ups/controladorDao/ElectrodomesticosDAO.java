@@ -43,6 +43,7 @@ public class ElectrodomesticosDAO implements IElectrodomesticoDAO{
                 televisiones.add((Television) electroLista);
             }
         }
+        
         return televisiones;
     }
 

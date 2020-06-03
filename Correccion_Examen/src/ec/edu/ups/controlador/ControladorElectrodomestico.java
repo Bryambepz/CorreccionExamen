@@ -34,7 +34,8 @@ public class ControladorElectrodomestico{
     }
 
     public void crearLavadora() {
-        dao.crearLavadora(vista.ingresarLavadora());
+        modelo = vista.ingresarLavadora();
+        dao.crearLavadora((Lavadora) modelo);
     }
 
    
@@ -44,7 +45,7 @@ public class ControladorElectrodomestico{
 
   
     public void mostrarLavadoras() {
-         vista.mostrarLavadoras(dao.mostrarLavadoras());
+        vista.mostrarLavadoras(dao.mostrarLavadoras());
     }
     
     

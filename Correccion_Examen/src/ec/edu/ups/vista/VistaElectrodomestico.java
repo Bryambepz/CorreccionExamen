@@ -53,6 +53,7 @@ public class VistaElectrodomestico {
     }
     
     public Lavadora ingresarLavadora(){
+        Lavadora lvnueva=new Lavadora();
         l=new Scanner(System.in);
         System.out.println("Ingrese codigo");
         int codigo=l.nextInt();
@@ -68,20 +69,29 @@ public class VistaElectrodomestico {
         int peso=l.nextInt();
         System.out.println("Ingrese Carga");
         int carga=l.nextInt();
-        return new Lavadora();
+        lvnueva.setCodigo(codigo);
+        lvnueva.setDescripcion(des);
+        lvnueva.setPrecioBase(pB);
+        lvnueva.setColor(color);
+        lvnueva.setConsumoElectrico(con);
+        lvnueva.setPeso(peso);
+        lvnueva.setCarga(carga);
+        return lvnueva;
     }
     
     public void mostrarTelevisiones(List<Television> televisiones){
         for (Television television : televisiones) {
             System.out.println("Televisiones: "+television);
+            System.out.println("\n//////////////////\n");
         }
-        System.out.println("");
+        
     }
     
     public void mostrarLavadoras(List<Lavadora> lavadoras){
         for (Lavadora lavadora : lavadoras) {
             System.out.println("Lavadoras: "+lavadora);
+            System.out.println("\n//////////////////\n");
         }
-        System.out.println("");
+
     }
 }

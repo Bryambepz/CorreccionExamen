@@ -23,24 +23,24 @@ public class Principal {
     static ControladorElectrodomestico contrlEle = new ControladorElectrodomestico(vista, modelo, dao);
 
     public static void main(String[] args) {
+        
         for (int i = 0; i < 3; i++) {
-            System.out.println("Ingrese Television");
+            System.out.println("Ingrese Television "+(i+1));
             contrlEle.crearTelevision();
         }
+        
+        System.out.println("");
+        System.out.println("Mostrar Televisiones");
+        contrlEle.mostrarTelevision();
+        System.out.println("--------------\n");
+        
         for (int i = 0; i < 3; i++) {
-            System.out.println("Mostrar Televisiones");
-            contrlEle.mostrarTelevision();
-        }
-
-        for (int i = 0; i < 3; i++) {
-            System.out.println("Ingrese lavadora");
+            System.out.println("Ingrese lavadora "+(i+1));
             contrlEle.crearLavadora();
         }
-
-        for (int i = 0; i < 3; i++) {
-            System.out.println("Mostrar lavadoras");
-            contrlEle.mostrarLavadoras();
-        }
-
+        
+        System.out.println("");
+        System.out.println("Mostrar lavadoras");
+        contrlEle.mostrarLavadoras();
     }
 }

@@ -105,8 +105,8 @@ public class Electrodomestico implements Comparable<Electrodomestico>{
     
     @Override
     public String toString() {
-        return "Electrodomesticos: " + "\ncodigo: " + codigo + " descripcion: " + descripcion + " precioBase: " + precioBase 
-                + " color: " + color + " consumoElectrico: " + consumoElectrico + " peso: " + peso ;
+        return "Electrodomesticos: " + "\ncodigo: " + codigo + "\ndescripcion: " + descripcion + "\nprecioBase: " + precioBase 
+                + "\ncolor: " + color + "\nconsumoElectrico: " + consumoElectrico + "\npeso: " + peso ;
     }
 
     @Override
